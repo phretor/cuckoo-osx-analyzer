@@ -1,0 +1,570 @@
+fsevents device cloned (fd 4)
+fslogger ready
+=> received 112 bytes
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 19299 (sh)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    46  string = /private/tmp/54b65a9300162638c1fab3ee/.dtruss
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+=> received 94 bytes
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19 (syslogd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    28  string = /private/var/log/system.log
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+=> received 417 bytes
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 17 (configd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    73  string = /Library/Preferences/SystemConfiguration/com.apple.smb.server.plist-lock
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 478558141031549
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_DELETE
+  pid            = 17 (configd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    73  string = /Library/Preferences/SystemConfiguration/com.apple.smb.server.plist-lock
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163517
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 17 (configd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    73  string = /Library/Preferences/SystemConfiguration/com.apple.smb.server.plist-lock
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+=> received 924 bytes
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 760033117742205
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_STAT_CHANGED
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006141
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006141
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006141
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163517
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006141
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19302 (Wxqfejykl)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    66  string = /private/var/root/Library/Preferences/com.apple.PubSabAgent.pfile
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+=> received 116 bytes
+# Event
+  type           = FSE_STAT_CHANGED
+  pid            = 19164 (coresymbolicatio)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    50  string = /Library/Caches/com.apple.coresymbolicationd/data
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+=> received 291 bytes
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    92  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist.R8psVIk
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320893
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    67  string = /Users/username/Library/Preferences/com.apple.spaces.plist.yWgzNEV
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 8390121713978844285
+    FSE_ARG_DONE (0xb33f)
+=> received 244 bytes
+# Event
+  type           = FSE_CREATE_DIR
+  pid            = 19304 (ManagedClient)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    56  string = /private/var/db/ConfigurationProfiles/Setup/.inProgress
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 478558141031550
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_DELETE
+  pid            = 19304 (ManagedClient)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    56  string = /private/var/db/ConfigurationProfiles/Setup/.inProgress
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 504881716406527102
+    FSE_ARG_DONE (0xb33f)
+=> received 94 bytes
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19 (syslogd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    28  string = /private/var/log/system.log
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163518
+    FSE_ARG_DONE (0xb33f)
+=> received 229 bytes
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19 (syslogd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    46  string = /private/var/log/DiagnosticMessages/StoreData
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163519
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19 (syslogd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    51  string = /private/var/log/DiagnosticMessages/2014.12.31.asl
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 360485053353960575
+    FSE_ARG_DONE (0xb33f)
+=> received 1379 bytes
+# Event
+  type           = FSE_CHOWN
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    67  string = /Users/username/Library/Preferences/com.apple.spaces.plist.yWgzNEV
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006143
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    67  string = /Users/username/Library/Preferences/com.apple.spaces.plist.yWgzNEV
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1041508094452863
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_RENAME
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    67  string = /Users/username/Library/Preferences/com.apple.spaces.plist.yWgzNEV
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 3866626 (?)
+    FSE_ARG_STRING    59  string = /Users/username/Library/Preferences/com.apple.spaces.plist
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163519
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    59  string = /Users/username/Library/Preferences/com.apple.spaces.plist
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006143
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    92  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist.R8psVIk
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006143
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    92  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist.R8psVIk
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1041508094452863
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_RENAME
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    92  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist.R8psVIk
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 5505026 (?)
+    FSE_ARG_STRING    84  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163519
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 116 (cfprefsd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    84  string = /Users/username/Library/Preferences/ByHost/com.apple.loginwindow.0800278387b0.plist
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320895
+    FSE_ARG_DONE (0xb33f)
+=> received 1479 bytes
+# Event
+  type           = FSE_DELETE
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    74  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320896
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    75  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006144
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    75  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163520
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    75  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1041508094452864
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_RENAME
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    75  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 4849666 (?)
+    FSE_ARG_STRING    74  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsObject.db
+    FSE_ARG_INT64      8  tstamp = 197083164320896
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    78  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsDirectory.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 2448882978006144
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CHOWN
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    78  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsDirectory.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163520
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    78  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsDirectory.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1041508094452864
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_RENAME
+  pid            = 19306 (mdworker)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    78  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsDirectory.db_
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 5046274 (?)
+    FSE_ARG_STRING    77  string = /private/var/folders/s2/hcr2lbqj2d3cqd8q_z8lpg300000gn/C/mds/mdsDirectory.db
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 197083164320896
+    FSE_ARG_DONE (0xb33f)
+=> received 460 bytes
+# Event
+  type           = FSE_CREATE_FILE
+  pid            = 38 (mds)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    55  string = /Library/Caches/com.apple.Spotlight/schema.501.scratch
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1322983071163520
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 38 (mds)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    55  string = /Library/Caches/com.apple.Spotlight/schema.501.scratch
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 1041508094452864
+    FSE_ARG_DONE (0xb33f)
+# Event
+  type           = FSE_RENAME
+  pid            = 38 (mds)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    55  string = /Library/Caches/com.apple.Spotlight/schema.501.scratch
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 3473410 (?)
+    FSE_ARG_STRING    53  string = /Library/Caches/com.apple.Spotlight/schema.501.plist
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  uid    = 262155 (?)
+    FSE_ARG_GID        4  gid    = 524293 (?)
+    FSE_ARG_INT64      8  tstamp = 3635164932405732480
+    FSE_ARG_DONE (0xb33f)
+=> received 94 bytes
+# Event
+  type           = FSE_CONTENT_MODIFIED
+  pid            = 19 (syslogd)
+  # Details
+    # type           len  data
+    FSE_ARG_STRING    28  string = /private/var/log/system.log
+    FSE_ARG_DEV        4  dev    = 0x040007 (major 0, minor 262151)
+    FSE_ARG_INO        4  ino    = 262154
+    FSE_ARG_MODE       4  mode   = ?-----x---  (0x040008, vnode type VNON)
+    FSE_ARG_UID        4  
