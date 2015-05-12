@@ -11,13 +11,6 @@ class MachO(Package):
         """
         return path
 
-    def execute(self, path, args):
-        p = Process()
-        if not p.execute(path=path, args=args):
-            raise CuckooPackageError('Unable to excute the process')
-
-        return p.pid
-
     def start(self, path):
         bundle_path = self._bundle(path)
         args = self.options.get('arguments')
