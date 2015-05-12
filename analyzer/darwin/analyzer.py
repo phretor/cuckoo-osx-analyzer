@@ -19,7 +19,6 @@ class Macalyser:
     """
 
     logger = None
-    injector = ""
     target = ""
     target_artefacts = []
     config= []
