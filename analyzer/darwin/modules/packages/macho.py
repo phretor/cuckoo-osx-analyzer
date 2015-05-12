@@ -1,4 +1,6 @@
 from lib.common.abstracts import Package
+from lib.api.process import Process
+from lib.common.exceptions import CuckooPackageError
 
 class MachO(Package):
     """MachO analysis.package."""
@@ -8,6 +10,13 @@ class MachO(Package):
         Create a Bundle.app from a single MachO file.
         """
         return path
+
+    def execute(self, path, args):
+        p = Process()
+        if not p.execute(path=path, args=args):
+            raise CuckooPackageError('Unable to excute the process')
+
+        return p.pid
 
     def start(self, path):
         bundle_path = self._bundle(path)

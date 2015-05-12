@@ -14,6 +14,10 @@ log = logging.getLogger(__name__)
 class Process(object):
     """Mac OS X process."""
 
+    def __init__(self):
+        self.pid = None
+        self.tracer = None
+
     def execute(self, path, args=None):
         """Execute and trace sample process.
         @param path: sample path.
@@ -21,14 +25,14 @@ class Process(object):
         @return: operation status.
         """
 
-        tracer = DTrace()
-        tracer.execute(path, args)
+        self.tracer = DTrace()
+        self.tracer.execute(path, args)
 
-        created = tracer.created()
+        created = self.tracer.created()
 
         if created:
             # TODO(phretor): set PID
-            self.pid = tracer.pid()
+            self.pid = self.tracer.pid()
             log.info("Successfully executed process from path \"%s\" with "
                      "arguments \"%s\" with pid %d", path, args or "", self.pid)
             return True
@@ -41,4 +45,5 @@ class Process(object):
         """Terminate process.
         @return: operation status.
         """
-        pass
+        self.tracer.terminate()
+        return True
