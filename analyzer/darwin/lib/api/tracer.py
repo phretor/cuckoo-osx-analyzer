@@ -34,7 +34,7 @@ class DTrace(object):
         return self._pid
 
     def created(self):
-        self._process != None
+        self._pid != None
 
     def terminate(self):
         if self._process:
@@ -55,7 +55,6 @@ class DTrace(object):
         cli = [path] + args
         command = '%s' % ' '.join(cli)
 
-        # TODO: save the target program's standard output and standard error
         cmd = [
             'sudo',
             '/usr/sbin/dtrace',
@@ -65,13 +64,27 @@ class DTrace(object):
             '-c', command
         ]
 
-        with open(self._target_stdout_file, 'w') as out:
-            with open(self._target_stderr_file, 'w') as err:
-                self._process = subprocess.Popen(
-                    cmd,
-                    stdout=out,
-                    stderr=err,
-                    bufsize=1)
+        log.debug('Starting tracer')
+        log.debug('Command: %s', subprocess.list2cmdline(cmd))
+        log.debug('stdout > %s, stderr > %s', \
+                  self._target_stdout_file, self._target_stderr_file)
+
+        out = open(self._target_stdout_file, 'w')
+        err = open(self._target_stderr_file, 'w')
+
+        try:
+            self._process = subprocess.Popen(cmd,
+                                             stdout=out,
+                                             stderr=err,
+                                             bufsize=1)
+        except Exception as e:
+            out.close()
+            err.close()
+            return False
 
         # TODO(phretor): do introspection to get the PID of the traced proc
         self._pid = self._process.pid
+
+        log.debug('Process started %s (PID: %d)', self._process, self._pid)
+
+        return True

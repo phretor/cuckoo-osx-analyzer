@@ -25,13 +25,15 @@ class Process(object):
         @return: operation status.
         """
 
-        self.tracer = DTrace()
-        self.tracer.execute(path, args)
+        if not os.access(path, os.X_OK):
+            log.error("Unable to access file at path \"%s\", "
+                      "execution aborted", path)
+            return False
 
-        created = self.tracer.created()
+        self.tracer = DTrace()
+        created = self.tracer.execute(path, args)
 
         if created:
-            # TODO(phretor): set PID
             self.pid = self.tracer.pid()
             log.info("Successfully executed process from path \"%s\" with "
                      "arguments \"%s\" with pid %d", path, args or "", self.pid)
