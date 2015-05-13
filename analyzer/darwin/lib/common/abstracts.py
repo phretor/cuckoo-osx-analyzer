@@ -2,8 +2,6 @@
 # This file is part of Cuckoo Sandbox - http://www.cuckoosandbox.org
 # See the file 'docs/LICENSE' for copying permission.
 
-import os
-
 from lib.api.process import Process
 from lib.common.exceptions import CuckooPackageError
 
@@ -38,7 +36,7 @@ class Package(object):
         @return: process pid
         """
         p = Process()
-        if not p.execute(path=path, args=args, suspended=suspended):
+        if not p.execute(path=path, args=args):
             raise CuckooPackageError("Unable to execute the initial process, "
                                      "analysis aborted.")
 
@@ -47,7 +45,7 @@ class Package(object):
     def package_files(self):
         """A list of files to upload to host.
         The list should be a list of tuples (<path on guest>, <name of file in package_files folder>).
-        (package_files is a folder that will be created in analysis folder). 
+        (package_files is a folder that will be created in analysis folder).
         """
         return None
 
