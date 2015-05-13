@@ -1,6 +1,4 @@
 from lib.common.abstracts import Package
-from lib.api.process import Process
-from lib.common.exceptions import CuckooPackageError
 
 class MachO(Package):
     """MachO analysis.package."""
@@ -9,6 +7,7 @@ class MachO(Package):
         """
         Create a Bundle.app from a single MachO file.
         """
+        # TODO: Implement this using BundleWrapper.create_from_macho
         return path
 
     def start(self, path):
