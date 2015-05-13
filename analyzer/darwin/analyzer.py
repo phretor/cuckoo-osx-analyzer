@@ -221,7 +221,7 @@ class Macalyser:
 
     def upload_artefacts(self, package):
         try:
-            # Upload files the package created to package_files in the 
+            # Upload files the package created to package_files in the
             # results folder to host
             package_files = package.package_files()
             if package_files != None:
@@ -269,7 +269,7 @@ if __name__ == "__main__":
 
     # Once the analysis is completed or terminated for any reason, we report
     # back to the agent, notifying that it can report back to the host.
-    #finally:
-    #    # Establish connection with the agent XMLRPC server.
-    #    server = xmlrpclib.Server("http://127.0.0.1:8000")
-    #    server.complete(success, error, PATHS["root"])
+    finally:
+        # Establish connection with the agent XMLRPC server.
+        server = xmlrpclib.Server("http://127.0.0.1:8000")
+        server.complete(success, error, PATHS["root"])
