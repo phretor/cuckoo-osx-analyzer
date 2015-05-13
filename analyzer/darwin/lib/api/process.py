@@ -18,7 +18,7 @@ class Process(object):
         self.pid = None
         self.tracer = None
 
-    def execute(self, path, args=None):
+    def execute(self, path, args=[]):
         """Execute and trace sample process.
         @param path: sample path.
         @param args: process args.

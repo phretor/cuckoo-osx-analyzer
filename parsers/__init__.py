@@ -6,7 +6,6 @@ import logging
 import pprint
 
 from parsers.dtruss import DtrussParser
-from parsers.strings import StringsParser
 from parsers.otool import OtoolParser
 from parsers.fslogger import FsloggerParser
 from parsers.nm import SymbolsParser
